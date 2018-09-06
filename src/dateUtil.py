@@ -23,6 +23,11 @@ def getCurrentDateTime():
     '''
     return time.strftime(format_datetime, time.localtime(time.time()))
 
+def formatTimestamp(formatStr,timestampSec):
+    '''
+        传入时间格式：然后格式化时间戳，时间戳单位为妙
+    '''
+    return time.strftime(formatStr, timestampSec)
 
 def getCurrentHour():
     '''
